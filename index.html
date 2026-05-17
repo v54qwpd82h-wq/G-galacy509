@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ht">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Legacy | Chwazi Lang Ou</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .lang-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 50px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.2);
+            max-width: 500px;
+            width: 90%;
+        }
+        h1 { margin-bottom: 10px; font-size: 2.5rem; letter-spacing: 2px; color: #00ffcc; }
+        p { margin-bottom: 30px; color: #ddd; font-size: 1.1rem; }
+        .lang-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 15px 25px;
+            margin: 15px 0;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .creole { background: #00247d; color: white; } /* Koulè ble drapo */
+        .french { background: #ffffff; color: #333; }
+        .english { background: #cf142b; color: white; }
+        .lang-btn:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,255,204,0.4); }
+        .flag { font-size: 1.5rem; }
+    </style>
+</head>
+<body>
+
+<div class="lang-container">
+    <h1>G-LEGACY</h1>
+    <p>Chwazi yon lang pou kòmanse / Choisissez une langue / Choose a language</p>
+    
+    <!-- Lè yo klike, sa ap mennen yo dirèkteman sou paj akèy la -->
+    <a href="home.html?lang=kr" class="lang-btn creole">
+        <span>🇭🇹 Kreyòl</span> <i class="fas fa-arrow-right"></i>
+    </a>
+    <a href="home.html?lang=fr" class="lang-btn french">
+        <span>🇫🇷 Français</span> <i class="fas fa-arrow-right"></i>
+    </a>
+    <a href="home.html?lang=en" class="lang-btn english">
+        <span>🇺🇸 English</span> <i class="fas fa-arrow-right"></i>
+    </a>
+</div>
+
+</body>
+</html>
